@@ -33,6 +33,14 @@ public class StoneServlet extends HttpServlet {
             action = "";
         }
         switch (action) {
+            case "delete": {
+                int id = Integer.parseInt(request.getParameter("id"));
+                Stone stone = stoneService.findById(id);
+                request.setAttribute("stone", stone);
+                RequestDispatcher dispatcher = request.getRequestDispatcher("/stone/delete.jsp");
+                dispatcher.forward(request, response);
+                break;
+            }
             case "create": {
                 List<Category> categories = categoryService.findAll();
                 request.setAttribute("categories", categories);
@@ -71,15 +79,17 @@ public class StoneServlet extends HttpServlet {
                 String description = request.getParameter("description");
                 String image = request.getParameter("image");
                 int category_id = Integer.parseInt(request.getParameter("category_id"));
-                Stone stone = new Stone(name, price, description, image,category_id);
+                Stone stone = new Stone(name, price, description, image, category_id);
                 stoneService.create(stone);
                 response.sendRedirect("/stones");
                 break;
             }
-//            case "delete": {
-//                deleteCustomer(request, response);
-//                break;
-//            }
+            case "delete": {
+                int id = Integer.parseInt(request.getParameter("id"));
+                stoneService.deleteById(id);
+                response.sendRedirect("/stones");
+                break;
+            }
 //            case "edit": {
 //                editCustomer(request, response);
 //                break;

@@ -18,7 +18,7 @@
 <body>
 <div class="container">
     <h1 style="text-align: center " >Category List</h1>
-        <a href="/category?action=create" class="btn btn-primary"><b>Thêm khách hàng mới</b></a>
+        <a href="/category?action=create" class="btn btn-primary"><b>Add Category</b></a>
     <%--    <a href="/stones?action=find" class="btn btn-primary"><b>Tìm kiếm khách hàng theo ID</b></a>--%>
 
     <table class="table">

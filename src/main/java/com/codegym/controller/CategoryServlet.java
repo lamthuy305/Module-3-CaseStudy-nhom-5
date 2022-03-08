@@ -37,6 +37,7 @@ public class CategoryServlet extends HttpServlet {
             case "create": {
                 RequestDispatcher dispatcher = request.getRequestDispatcher("/category/create.jsp");
                 dispatcher.forward(request, response);
+                break;
             }
             case "view": {
                 int category_Id = Integer.parseInt(request.getParameter("id"));
@@ -44,6 +45,7 @@ public class CategoryServlet extends HttpServlet {
                 request.setAttribute("stones", stones);
                 RequestDispatcher dispatcher = request.getRequestDispatcher("/category/view.jsp");
                 dispatcher.forward(request, response);
+                break;
             }
             default: {
                 List<Category> categories = categoryService.findAll();
@@ -58,6 +60,28 @@ public class CategoryServlet extends HttpServlet {
 
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        String action = request.getParameter("action");
+        if (action == null) {
+            action = "";
+        }
 
+        switch (action) {
+            case "create": {
+                String name = request.getParameter("name");
+                Category category = new Category(name);
+                categoryService.create(category);
+                response.sendRedirect("/category");
+                break;
+            }
+//            case "delete": {
+//                deleteCustomer(request, response);
+//                break;
+//            }
+//            case "edit": {
+//                editCustomer(request, response);
+//                break;
+//            }
+        }
     }
+
 }
