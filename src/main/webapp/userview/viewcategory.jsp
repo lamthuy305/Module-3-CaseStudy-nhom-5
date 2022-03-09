@@ -173,12 +173,6 @@
 </section>
 <!-- Hero Section End -->
 
-
-
-
-
-
-
 <!-- Footer Section Begin -->
 <footer class="footer spad">
     <div class="container">
