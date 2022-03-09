@@ -12,7 +12,6 @@ import com.codegym.service.image.IImageService;
 import com.codegym.service.image.ImageService;
 import com.codegym.service.stone.IStoneService;
 import com.codegym.service.stone.StoneService;
-
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -44,12 +43,6 @@ public class UserViewServlet extends HttpServlet {
             action = "";
         }
         switch (action) {
-            default: {
-                request.setAttribute("categories", categories);
-                RequestDispatcher dispatcher = request.getRequestDispatcher("/index.jsp");
-                dispatcher.forward(request, response);
-                break;
-            }
 //            case "edit": {
 //                int id = Integer.parseInt(request.getParameter("id"));
 //                Image image = imageService.findById(id);
@@ -80,20 +73,40 @@ public class UserViewServlet extends HttpServlet {
             case "viewcategory": {
                 int id = Integer.parseInt(request.getParameter("id"));
                 List<Stone> stones = stoneService.findAllByCategory(id);
-//                categories = categoryService.findAll();
                 request.setAttribute("stones", stones);
                 request.setAttribute("categories", categories);
                 RequestDispatcher dispatcher = request.getRequestDispatcher("/userview/viewcategory.jsp");
                 dispatcher.forward(request, response);
                 break;
             }
-//            default: {
-//                List<Image> images = imageService.findAll();
-//                request.setAttribute("images", images);
-//                RequestDispatcher dispatcher = request.getRequestDispatcher("/image/list.jsp");
-//                dispatcher.forward(request, response);
-//                break;
-//            }
+
+            case "viewstone": {
+                int id = Integer.parseInt(request.getParameter("id"));
+                Stone stone = stoneService.findById(id);
+                List<Image> images = imageService.findAllByStone_ID(id);
+                request.setAttribute("stone", stone);
+                request.setAttribute("images", images);
+                request.setAttribute("categories", categories);
+                RequestDispatcher dispatcher = request.getRequestDispatcher("/userview/viewstone.jsp");
+                dispatcher.forward(request, response);
+                break;
+            }
+            case "seachstone": {
+                String q = request.getParameter("q");
+                List<Stone> stones = stoneService.findAllByName(q);
+                request.setAttribute("stones", stones);
+                request.setAttribute("categories", categories);
+                RequestDispatcher dispatcher = request.getRequestDispatcher("/userview/viewallstonebyseach.jsp");
+                dispatcher.forward(request, response);
+                break;
+            }
+
+            default: {
+                request.setAttribute("categories", categories);
+                RequestDispatcher dispatcher = request.getRequestDispatcher("/index.jsp");
+                dispatcher.forward(request, response);
+                break;
+            }
         }
 
     }

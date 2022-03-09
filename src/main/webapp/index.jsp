@@ -62,7 +62,7 @@
         <div class="row">
             <div class="col-lg-3">
                 <div class="header__logo">
-                    <a href="/index.jsp"><img src="img/logovico.jpg" alt="" width="100" height="100"></a>
+                    <img src="../img/logovico.jpg" alt="" width="100" height="100">
                 </div>
             </div>
             <div class="col-lg-6">
@@ -121,12 +121,13 @@
             <div class="col-lg-9">
                 <div class="hero__search">
                     <div class="hero__search__form">
-                        <form action="#">
+                        <form action="?action=seachstone" method="get">
                             <div class="hero__search__categories">
                                 All Product
                                 <span class="arrow_carrot-down"></span>
                             </div>
-                            <input type="text" placeholder="What do you need?">
+                            <input type="hidden" name="action" value="seachstone">
+                            <input type="text" placeholder="What do you need?" name="q">
                             <button type="submit" class="site-btn">SEARCH</button>
                         </form>
                     </div>
