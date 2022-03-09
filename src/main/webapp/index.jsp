@@ -1,3 +1,4 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html lang="zxx">
 
@@ -22,71 +23,6 @@
 </head>
 
 <body>
-<!-- Page Preloder -->
-<%--<div id="preloder">--%>
-<%--    <div class="loader"></div>--%>
-<%--</div>--%>
-
-<!-- Humberger Begin -->
-<%--<div class="humberger__menu__overlay"></div>--%>
-<%--<div class="humberger__menu__wrapper">--%>
-<%--    <div class="humberger__menu__logo">--%>
-<%--        <a href="#"><img src="img/logo.png" alt=""></a>--%>
-<%--    </div>--%>
-<%--&lt;%&ndash;    <div class="humberger__menu__cart">&ndash;%&gt;--%>
-<%--&lt;%&ndash;        <ul>&ndash;%&gt;--%>
-<%--&lt;%&ndash;            <li><a href="#"><i class="fa fa-heart"></i> <span>1</span></a></li>&ndash;%&gt;--%>
-<%--&lt;%&ndash;            <li><a href="#"><i class="fa fa-shopping-bag"></i> <span>3</span></a></li>&ndash;%&gt;--%>
-<%--&lt;%&ndash;        </ul>&ndash;%&gt;--%>
-<%--&lt;%&ndash;        <div class="header__cart__price">item: <span>$150.00</span></div>&ndash;%&gt;--%>
-<%--&lt;%&ndash;    </div>&ndash;%&gt;--%>
-<%--&lt;%&ndash;    <div class="humberger__menu__widget">&ndash;%&gt;--%>
-<%--&lt;%&ndash;        <div class="header__top__right__language">&ndash;%&gt;--%>
-<%--&lt;%&ndash;            <img src="img/language.png" alt="">&ndash;%&gt;--%>
-<%--&lt;%&ndash;            <div>English</div>&ndash;%&gt;--%>
-<%--&lt;%&ndash;            <span class="arrow_carrot-down"></span>&ndash;%&gt;--%>
-<%--&lt;%&ndash;            <ul>&ndash;%&gt;--%>
-<%--&lt;%&ndash;                <li><a href="#">Spanis</a></li>&ndash;%&gt;--%>
-<%--&lt;%&ndash;                <li><a href="#">English</a></li>&ndash;%&gt;--%>
-<%--&lt;%&ndash;            </ul>&ndash;%&gt;--%>
-<%--&lt;%&ndash;        </div>&ndash;%&gt;--%>
-<%--&lt;%&ndash;        <div class="header__top__right__auth">&ndash;%&gt;--%>
-<%--&lt;%&ndash;            <a href="#"><i class="fa fa-user"></i> Login</a>&ndash;%&gt;--%>
-<%--&lt;%&ndash;        </div>&ndash;%&gt;--%>
-<%--&lt;%&ndash;    </div>&ndash;%&gt;--%>
-<%--&lt;%&ndash;    <nav class="humberger__menu__nav mobile-menu">&ndash;%&gt;--%>
-<%--&lt;%&ndash;        <ul>&ndash;%&gt;--%>
-<%--&lt;%&ndash;            <li class="active"><a href="./index.jsp">Home</a></li>&ndash;%&gt;--%>
-<%--&lt;%&ndash;            <li><a href="./shop-grid.html">Shop</a></li>&ndash;%&gt;--%>
-<%--&lt;%&ndash;            <li><a href="#">Pages</a>&ndash;%&gt;--%>
-<%--&lt;%&ndash;&lt;%&ndash;                <ul class="header__menu__dropdown">&ndash;%&gt;&ndash;%&gt;--%>
-<%--&lt;%&ndash;&lt;%&ndash;                    <li><a href="./shop-details.html">Shop Details</a></li>&ndash;%&gt;&ndash;%&gt;--%>
-<%--&lt;%&ndash;&lt;%&ndash;                    <li><a href="./shoping-cart.html">Shoping Cart</a></li>&ndash;%&gt;&ndash;%&gt;--%>
-<%--&lt;%&ndash;&lt;%&ndash;                    <li><a href="./checkout.html">Check Out</a></li>&ndash;%&gt;&ndash;%&gt;--%>
-<%--&lt;%&ndash;&lt;%&ndash;                    <li><a href="./blog-details.html">Blog Details</a></li>&ndash;%&gt;&ndash;%&gt;--%>
-<%--&lt;%&ndash;&lt;%&ndash;                </ul>&ndash;%&gt;&ndash;%&gt;--%>
-<%--&lt;%&ndash;            </li>&ndash;%&gt;--%>
-<%--&lt;%&ndash;            <li><a href="./blog.html">Blog</a></li>&ndash;%&gt;--%>
-<%--&lt;%&ndash;            <li><a href="./contact.html">Contact</a></li>&ndash;%&gt;--%>
-<%--&lt;%&ndash;        </ul>&ndash;%&gt;--%>
-<%--&lt;%&ndash;    </nav>&ndash;%&gt;--%>
-<%--    <div id="mobile-menu-wrap"></div>--%>
-<%--    <div class="header__top__right__social">--%>
-<%--        <a href="#"><i class="fa fa-facebook"></i></a>--%>
-<%--        <a href="#"><i class="fa fa-twitter"></i></a>--%>
-<%--        <a href="#"><i class="fa fa-linkedin"></i></a>--%>
-<%--        <a href="#"><i class="fa fa-pinterest-p"></i></a>--%>
-<%--    </div>--%>
-<%--    <div class="humberger__menu__contact">--%>
-<%--        <ul>--%>
-<%--            <li><i class="fa fa-envelope"></i> hello@colorlib.com</li>--%>
-<%--            <li>Free Shipping for all Order of $99</li>--%>
-<%--        </ul>--%>
-<%--    </div>--%>
-<%--</div>--%>
-<!-- Humberger End -->
-
-
 <%--SỬA TỪ ĐÂY--%>
 
 <!-- Header Section Begin -->
@@ -98,7 +34,6 @@
                     <div class="header__top__left">
                         <ul>
                             <li><i class="fa fa-envelope"></i>Codegym@gmail.com</li>
-                            <%--                            <li>Free Shipping for all Order of $99</li>--%>
                         </ul>
                     </div>
                 </div>
@@ -116,7 +51,7 @@
                             </ul>
                         </div>
                         <div class="header__top__right__auth">
-                            <a href="#"><i class="fa fa-user"></i> Login</a>
+                            <a href="#"><i class="fa fa-user"></i>Login</a>
                         </div>
                     </div>
                 </div>
@@ -127,7 +62,7 @@
         <div class="row">
             <div class="col-lg-3">
                 <div class="header__logo">
-                    <a href="./index.jsp"><img src="img/logovico.jpg" alt="" width="100" height="100"></a>
+                    <a href="/index.jsp"><img src="img/logovico.jpg" alt="" width="100" height="100"></a>
                 </div>
             </div>
             <div class="col-lg-6">
@@ -173,14 +108,13 @@
                 <div class="hero__categories">
                     <div class="hero__categories__all">
                         <i class="fa fa-bars"></i>
-                        <span>All Product</span>
+                        <span>All Category</span>
                     </div>
                     <ul>
-                        <li><a href="#">Group A</a></li>
-                        <li><a href="#">Group B</a></li>
-                        <li><a href="#">Group C</a></li>
-                        <li><a href="#">Group D</a></li>
-                        <li><a href="#">Group E</a></li>
+                        <c:forEach var="category" items="${categories}">
+                            <li><a href="/?action=viewcategory&id=${category.id}">${category.name}</a></li>
+                        </c:forEach>
+
                     </ul>
                 </div>
             </div>
@@ -227,37 +161,30 @@
             <div class="categories__slider owl-carousel">
                 <div class="col-lg-3">
                     <div class="categories__item set-bg" data-setbg="img/categories/sp8.jpg">
-                        <%--                        <h5><a href="#">Lavarbo</a></h5>--%>
                     </div>
                 </div>
                 <div class="col-lg-3">
                     <div class="categories__item set-bg" data-setbg="img/categories/sp9.jpg">
-                        <%--                        <h5><a href="#">Ban an</a></h5>--%>
                     </div>
                 </div>
                 <div class="col-lg-3">
                     <div class="categories__item set-bg" data-setbg="img/categories/sp3.jpg">
-                        <%--                        <h5><a href="#">Ban tra</a></h5>--%>
                     </div>
                 </div>
                 <div class="col-lg-3">
                     <div class="categories__item set-bg" data-setbg="img/categories/sp4.jpg">
-                        <%--                        <h5><a href="#">drink fruits</a></h5>--%>
                     </div>
                 </div>
                 <div class="col-lg-3">
                     <div class="categories__item set-bg" data-setbg="img/categories/sp5.jpg">
-                        <%--                        <h5><a href="#">drink fruits</a></h5>--%>
                     </div>
                 </div>
                 <div class="col-lg-3">
                     <div class="categories__item set-bg" data-setbg="img/categories/sp6.jpg">
-                        <%--                        <h5><a href="#">drink fruits</a></h5>--%>
                     </div>
                 </div>
                 <div class="col-lg-3">
                     <div class="categories__item set-bg" data-setbg="img/categories/sp7.jpg">
-                        <%--                        <h5><a href="#">drink fruits</a></h5>--%>
                     </div>
                 </div>
             </div>
@@ -274,26 +201,26 @@
                 <div class="section-title">
                     <h2>Featured Product</h2>
                 </div>
-<%--                <div class="featured__controls">--%>
-<%--                    <ul>--%>
-<%--                        <li class="active" data-filter="*">All</li>--%>
-<%--                        <li data-filter=".oranges">Oranges</li>--%>
-<%--                        <li data-filter=".fresh-meat">Fresh Meat</li>--%>
-<%--                        <li data-filter=".vegetables">Vegetables</li>--%>
-<%--                        <li data-filter=".fastfood">Fastfood</li>--%>
-<%--                    </ul>--%>
-<%--                </div>--%>
+                <%--                <div class="featured__controls">--%>
+                <%--                    <ul>--%>
+                <%--                        <li class="active" data-filter="*">All</li>--%>
+                <%--                        <li data-filter=".oranges">Oranges</li>--%>
+                <%--                        <li data-filter=".fresh-meat">Fresh Meat</li>--%>
+                <%--                        <li data-filter=".vegetables">Vegetables</li>--%>
+                <%--                        <li data-filter=".fastfood">Fastfood</li>--%>
+                <%--                    </ul>--%>
+                <%--                </div>--%>
             </div>
         </div>
         <div class="row featured__filter">
             <div class="col-lg-3 col-md-4 col-sm-6 mix oranges fresh-meat">
                 <div class="featured__item">
                     <div class="featured__item__pic set-bg" data-setbg="img/bq2600.jpg">
-<%--                        <ul class="featured__item__pic__hover">--%>
-<%--                            <li><a href="#"><i class="fa fa-heart"></i></a></li>--%>
-<%--                            <li><a href="#"><i class="fa fa-retweet"></i></a></li>--%>
-<%--                            <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>--%>
-<%--                        </ul>--%>
+                        <%--                        <ul class="featured__item__pic__hover">--%>
+                        <%--                            <li><a href="#"><i class="fa fa-heart"></i></a></li>--%>
+                        <%--                            <li><a href="#"><i class="fa fa-retweet"></i></a></li>--%>
+                        <%--                            <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>--%>
+                        <%--                        </ul>--%>
                     </div>
                     <div class="featured__item__text">
                         <h6><a href="#">BQ 2600</a></h6>
@@ -304,11 +231,11 @@
             <div class="col-lg-3 col-md-4 col-sm-6 mix vegetables fastfood">
                 <div class="featured__item">
                     <div class="featured__item__pic set-bg" data-setbg="img/bq8390.jpg">
-<%--                        <ul class="featured__item__pic__hover">--%>
-<%--                            <li><a href="#"><i class="fa fa-heart"></i></a></li>--%>
-<%--                            <li><a href="#"><i class="fa fa-retweet"></i></a></li>--%>
-<%--                            <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>--%>
-<%--                        </ul>--%>
+                        <%--                        <ul class="featured__item__pic__hover">--%>
+                        <%--                            <li><a href="#"><i class="fa fa-heart"></i></a></li>--%>
+                        <%--                            <li><a href="#"><i class="fa fa-retweet"></i></a></li>--%>
+                        <%--                            <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>--%>
+                        <%--                        </ul>--%>
                     </div>
                     <div class="featured__item__text">
                         <h6><a href="#">BQ 8390</a></h6>
@@ -319,11 +246,11 @@
             <div class="col-lg-3 col-md-4 col-sm-6 mix vegetables fresh-meat">
                 <div class="featured__item">
                     <div class="featured__item__pic set-bg" data-setbg="img/bq8660.jpg">
-<%--                        <ul class="featured__item__pic__hover">--%>
-<%--                            <li><a href="#"><i class="fa fa-heart"></i></a></li>--%>
-<%--                            <li><a href="#"><i class="fa fa-retweet"></i></a></li>--%>
-<%--                            <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>--%>
-<%--                        </ul>--%>
+                        <%--                        <ul class="featured__item__pic__hover">--%>
+                        <%--                            <li><a href="#"><i class="fa fa-heart"></i></a></li>--%>
+                        <%--                            <li><a href="#"><i class="fa fa-retweet"></i></a></li>--%>
+                        <%--                            <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>--%>
+                        <%--                        </ul>--%>
                     </div>
                     <div class="featured__item__text">
                         <h6><a href="#">BQ 8660</a></h6>
@@ -334,11 +261,11 @@
             <div class="col-lg-3 col-md-4 col-sm-6 mix fastfood oranges">
                 <div class="featured__item">
                     <div class="featured__item__pic set-bg" data-setbg="img/bq8786.jpg">
-<%--                        <ul class="featured__item__pic__hover">--%>
-<%--                            <li><a href="#"><i class="fa fa-heart"></i></a></li>--%>
-<%--                            <li><a href="#"><i class="fa fa-retweet"></i></a></li>--%>
-<%--                            <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>--%>
-<%--                        </ul>--%>
+                        <%--                        <ul class="featured__item__pic__hover">--%>
+                        <%--                            <li><a href="#"><i class="fa fa-heart"></i></a></li>--%>
+                        <%--                            <li><a href="#"><i class="fa fa-retweet"></i></a></li>--%>
+                        <%--                            <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>--%>
+                        <%--                        </ul>--%>
                     </div>
                     <div class="featured__item__text">
                         <h6><a href="#">BQ 8786</a></h6>
