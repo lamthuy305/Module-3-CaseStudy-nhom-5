@@ -17,7 +17,7 @@
 </head>
 <body>
 <div class="container">
-    <h1 style="text-align: center " >Stone List</h1>
+    <h1 style="text-align: center " >Category List</h1>
     <%--    <a href="/stones?action=create" class="btn btn-primary"><b>Thêm khách hàng mới</b></a>--%>
     <%--    <a href="/stones?action=find" class="btn btn-primary"><b>Tìm kiếm khách hàng theo ID</b></a>--%>
 

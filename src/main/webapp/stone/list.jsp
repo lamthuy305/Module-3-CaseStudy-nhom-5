@@ -19,8 +19,6 @@
 <div class="container">
     <h1 style="text-align: center " >Stone List</h1>
     <a href="/stones?action=create" class="btn btn-primary"><b>Add Stone</b></a>
-    <%--    <a href="/stones?action=find" class="btn btn-primary"><b>Tìm kiếm khách hàng theo ID</b></a>--%>
-
     <table class="table">
         <thead>
         <tr>
@@ -41,7 +39,7 @@
                 <td>${stone.name}</td>
                 <td>${stone.price}</td>
                 <td>${stone.description}</td>
-                <td>${stone.category_id}</td>
+                <td><a href="/category?action=view&id=${stone.category_id}">${stone.category_id}</a></td>
                 <td><a href="/stones?action=view&id=${stone.id}"><img src="${stone.image}" alt="" width="100" height="100"></a></td>
                 <td><a href="/stones?action=edit&id=${stone.id}" class="btn btn-primary"><i class="fas fa-edit"></i></a></td>
                 <td><a href="/stones?action=delete&id=${stone.id}" class="btn btn-danger"><i class="fas fa-trash"></i></a></td>
