@@ -42,4 +42,10 @@ public class StoneService implements IStoneService {
     public List<Stone> findAllByCategory(int id) {
         return stoneDao.findAllByCategory(id);
     }
+
+    @Override
+    public List<Stone> findAllByName(String q) {
+        q = "%" + q + "%";
+        return stoneDao.findAllByName(q);
+    }
 }

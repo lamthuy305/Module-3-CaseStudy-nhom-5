@@ -155,6 +155,7 @@
                             </tr>
                             </thead>
                             <tbody>
+
                             <c:forEach var="stone" items="${stones}">
                                 <tr>
                                     <td>${stone.id}</td>
@@ -167,6 +168,32 @@
                             </c:forEach>
                             </tbody>
                         </table>
+
+                    <div style="height: 50px"></div>
+                    <section class="categories">
+                        <div class="container">
+                            <div class="row">
+                                <div class="categories__slider owl-carousel">
+                                    <div class="col-lg-3">
+                                        <div class="categories__item set-bg" data-setbg="${stone.image}"
+                                             style="width: 200px; height: 200px">
+                                        </div>
+                                    </div>
+
+<%--                                    <c:forEach var="image" items="${images}">--%>
+<%--                                        <div class="col-lg-3">--%>
+<%--                                            <div class="categories__item set-bg" data-setbg="${image.link}"--%>
+<%--                                                 style="width: 200px; height: 200px">--%>
+<%--                                            </div>--%>
+
+<%--                                        </div>--%>
+<%--                                    </c:forEach>--%>
+
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
                 </div>
             </div>
         </div>
