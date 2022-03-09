@@ -1,3 +1,4 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html lang="zxx">
 
@@ -22,71 +23,6 @@
 </head>
 
 <body>
-<!-- Page Preloder -->
-<%--<div id="preloder">--%>
-<%--    <div class="loader"></div>--%>
-<%--</div>--%>
-
-<!-- Humberger Begin -->
-<%--<div class="humberger__menu__overlay"></div>--%>
-<%--<div class="humberger__menu__wrapper">--%>
-<%--    <div class="humberger__menu__logo">--%>
-<%--        <a href="#"><img src="img/logo.png" alt=""></a>--%>
-<%--    </div>--%>
-<%--&lt;%&ndash;    <div class="humberger__menu__cart">&ndash;%&gt;--%>
-<%--&lt;%&ndash;        <ul>&ndash;%&gt;--%>
-<%--&lt;%&ndash;            <li><a href="#"><i class="fa fa-heart"></i> <span>1</span></a></li>&ndash;%&gt;--%>
-<%--&lt;%&ndash;            <li><a href="#"><i class="fa fa-shopping-bag"></i> <span>3</span></a></li>&ndash;%&gt;--%>
-<%--&lt;%&ndash;        </ul>&ndash;%&gt;--%>
-<%--&lt;%&ndash;        <div class="header__cart__price">item: <span>$150.00</span></div>&ndash;%&gt;--%>
-<%--&lt;%&ndash;    </div>&ndash;%&gt;--%>
-<%--&lt;%&ndash;    <div class="humberger__menu__widget">&ndash;%&gt;--%>
-<%--&lt;%&ndash;        <div class="header__top__right__language">&ndash;%&gt;--%>
-<%--&lt;%&ndash;            <img src="img/language.png" alt="">&ndash;%&gt;--%>
-<%--&lt;%&ndash;            <div>English</div>&ndash;%&gt;--%>
-<%--&lt;%&ndash;            <span class="arrow_carrot-down"></span>&ndash;%&gt;--%>
-<%--&lt;%&ndash;            <ul>&ndash;%&gt;--%>
-<%--&lt;%&ndash;                <li><a href="#">Spanis</a></li>&ndash;%&gt;--%>
-<%--&lt;%&ndash;                <li><a href="#">English</a></li>&ndash;%&gt;--%>
-<%--&lt;%&ndash;            </ul>&ndash;%&gt;--%>
-<%--&lt;%&ndash;        </div>&ndash;%&gt;--%>
-<%--&lt;%&ndash;        <div class="header__top__right__auth">&ndash;%&gt;--%>
-<%--&lt;%&ndash;            <a href="#"><i class="fa fa-user"></i> Login</a>&ndash;%&gt;--%>
-<%--&lt;%&ndash;        </div>&ndash;%&gt;--%>
-<%--&lt;%&ndash;    </div>&ndash;%&gt;--%>
-<%--&lt;%&ndash;    <nav class="humberger__menu__nav mobile-menu">&ndash;%&gt;--%>
-<%--&lt;%&ndash;        <ul>&ndash;%&gt;--%>
-<%--&lt;%&ndash;            <li class="active"><a href="./index.jsp">Home</a></li>&ndash;%&gt;--%>
-<%--&lt;%&ndash;            <li><a href="./shop-grid.html">Shop</a></li>&ndash;%&gt;--%>
-<%--&lt;%&ndash;            <li><a href="#">Pages</a>&ndash;%&gt;--%>
-<%--&lt;%&ndash;&lt;%&ndash;                <ul class="header__menu__dropdown">&ndash;%&gt;&ndash;%&gt;--%>
-<%--&lt;%&ndash;&lt;%&ndash;                    <li><a href="./shop-details.html">Shop Details</a></li>&ndash;%&gt;&ndash;%&gt;--%>
-<%--&lt;%&ndash;&lt;%&ndash;                    <li><a href="./shoping-cart.html">Shoping Cart</a></li>&ndash;%&gt;&ndash;%&gt;--%>
-<%--&lt;%&ndash;&lt;%&ndash;                    <li><a href="./checkout.html">Check Out</a></li>&ndash;%&gt;&ndash;%&gt;--%>
-<%--&lt;%&ndash;&lt;%&ndash;                    <li><a href="./blog-details.html">Blog Details</a></li>&ndash;%&gt;&ndash;%&gt;--%>
-<%--&lt;%&ndash;&lt;%&ndash;                </ul>&ndash;%&gt;&ndash;%&gt;--%>
-<%--&lt;%&ndash;            </li>&ndash;%&gt;--%>
-<%--&lt;%&ndash;            <li><a href="./blog.html">Blog</a></li>&ndash;%&gt;--%>
-<%--&lt;%&ndash;            <li><a href="./contact.html">Contact</a></li>&ndash;%&gt;--%>
-<%--&lt;%&ndash;        </ul>&ndash;%&gt;--%>
-<%--&lt;%&ndash;    </nav>&ndash;%&gt;--%>
-<%--    <div id="mobile-menu-wrap"></div>--%>
-<%--    <div class="header__top__right__social">--%>
-<%--        <a href="#"><i class="fa fa-facebook"></i></a>--%>
-<%--        <a href="#"><i class="fa fa-twitter"></i></a>--%>
-<%--        <a href="#"><i class="fa fa-linkedin"></i></a>--%>
-<%--        <a href="#"><i class="fa fa-pinterest-p"></i></a>--%>
-<%--    </div>--%>
-<%--    <div class="humberger__menu__contact">--%>
-<%--        <ul>--%>
-<%--            <li><i class="fa fa-envelope"></i> hello@colorlib.com</li>--%>
-<%--            <li>Free Shipping for all Order of $99</li>--%>
-<%--        </ul>--%>
-<%--    </div>--%>
-<%--</div>--%>
-<!-- Humberger End -->
-
-
 <%--SỬA TỪ ĐÂY--%>
 
 <!-- Header Section Begin -->
@@ -98,7 +34,6 @@
                     <div class="header__top__left">
                         <ul>
                             <li><i class="fa fa-envelope"></i>Codegym@gmail.com</li>
-                            <%--                            <li>Free Shipping for all Order of $99</li>--%>
                         </ul>
                     </div>
                 </div>
@@ -116,7 +51,11 @@
                             </ul>
                         </div>
                         <div class="header__top__right__auth">
+<<<<<<< HEAD
                             <a href="/login"><i class="fa fa-user"></i> Login</a>
+=======
+                            <a href="#"><i class="fa fa-user"></i>Login</a>
+>>>>>>> 8f58ad822cadbd74f07af3d37c095d6d4c207751
                         </div>
                     </div>
                 </div>
@@ -127,7 +66,7 @@
         <div class="row">
             <div class="col-lg-3">
                 <div class="header__logo">
-                    <a href="./index.jsp"><img src="img/logovico.jpg" alt="" width="100" height="100"></a>
+                    <img src="../img/logovico.jpg" alt="" width="100" height="100">
                 </div>
             </div>
             <div class="col-lg-6">
@@ -173,26 +112,26 @@
                 <div class="hero__categories">
                     <div class="hero__categories__all">
                         <i class="fa fa-bars"></i>
-                        <span>All Product</span>
+                        <span>All Category</span>
                     </div>
                     <ul>
-                        <li><a href="#">Group A</a></li>
-                        <li><a href="#">Group B</a></li>
-                        <li><a href="#">Group C</a></li>
-                        <li><a href="#">Group D</a></li>
-                        <li><a href="#">Group E</a></li>
+                        <c:forEach var="category" items="${categories}">
+                            <li><a href="/?action=viewcategory&id=${category.id}">${category.name}</a></li>
+                        </c:forEach>
+
                     </ul>
                 </div>
             </div>
             <div class="col-lg-9">
                 <div class="hero__search">
                     <div class="hero__search__form">
-                        <form action="#">
+                        <form action="?action=seachstone" method="get">
                             <div class="hero__search__categories">
                                 All Product
                                 <span class="arrow_carrot-down"></span>
                             </div>
-                            <input type="text" placeholder="What do you need?">
+                            <input type="hidden" name="action" value="seachstone">
+                            <input type="text" placeholder="What do you need?" name="q">
                             <button type="submit" class="site-btn">SEARCH</button>
                         </form>
                     </div>
@@ -227,37 +166,30 @@
             <div class="categories__slider owl-carousel">
                 <div class="col-lg-3">
                     <div class="categories__item set-bg" data-setbg="img/categories/sp8.jpg">
-                        <%--                        <h5><a href="#">Lavarbo</a></h5>--%>
                     </div>
                 </div>
                 <div class="col-lg-3">
                     <div class="categories__item set-bg" data-setbg="img/categories/sp9.jpg">
-                        <%--                        <h5><a href="#">Ban an</a></h5>--%>
                     </div>
                 </div>
                 <div class="col-lg-3">
                     <div class="categories__item set-bg" data-setbg="img/categories/sp3.jpg">
-                        <%--                        <h5><a href="#">Ban tra</a></h5>--%>
                     </div>
                 </div>
                 <div class="col-lg-3">
                     <div class="categories__item set-bg" data-setbg="img/categories/sp4.jpg">
-                        <%--                        <h5><a href="#">drink fruits</a></h5>--%>
                     </div>
                 </div>
                 <div class="col-lg-3">
                     <div class="categories__item set-bg" data-setbg="img/categories/sp5.jpg">
-                        <%--                        <h5><a href="#">drink fruits</a></h5>--%>
                     </div>
                 </div>
                 <div class="col-lg-3">
                     <div class="categories__item set-bg" data-setbg="img/categories/sp6.jpg">
-                        <%--                        <h5><a href="#">drink fruits</a></h5>--%>
                     </div>
                 </div>
                 <div class="col-lg-3">
                     <div class="categories__item set-bg" data-setbg="img/categories/sp7.jpg">
-                        <%--                        <h5><a href="#">drink fruits</a></h5>--%>
                     </div>
                 </div>
             </div>
@@ -266,150 +198,7 @@
 </section>
 <!-- Categories Section End -->
 
-<!-- Featured Section Begin -->
-<section class="featured spad">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12">
-                <div class="section-title">
-                    <h2>Featured Product</h2>
-                </div>
-<%--                <div class="featured__controls">--%>
-<%--                    <ul>--%>
-<%--                        <li class="active" data-filter="*">All</li>--%>
-<%--                        <li data-filter=".oranges">Oranges</li>--%>
-<%--                        <li data-filter=".fresh-meat">Fresh Meat</li>--%>
-<%--                        <li data-filter=".vegetables">Vegetables</li>--%>
-<%--                        <li data-filter=".fastfood">Fastfood</li>--%>
-<%--                    </ul>--%>
-<%--                </div>--%>
-            </div>
-        </div>
-        <div class="row featured__filter">
-            <div class="col-lg-3 col-md-4 col-sm-6 mix oranges fresh-meat">
-                <div class="featured__item">
-                    <div class="featured__item__pic set-bg" data-setbg="img/bq2600.jpg">
-<%--                        <ul class="featured__item__pic__hover">--%>
-<%--                            <li><a href="#"><i class="fa fa-heart"></i></a></li>--%>
-<%--                            <li><a href="#"><i class="fa fa-retweet"></i></a></li>--%>
-<%--                            <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>--%>
-<%--                        </ul>--%>
-                    </div>
-                    <div class="featured__item__text">
-                        <h6><a href="#">BQ 2600</a></h6>
-                        <h5>$4.200.000</h5>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-4 col-sm-6 mix vegetables fastfood">
-                <div class="featured__item">
-                    <div class="featured__item__pic set-bg" data-setbg="img/bq8390.jpg">
-<%--                        <ul class="featured__item__pic__hover">--%>
-<%--                            <li><a href="#"><i class="fa fa-heart"></i></a></li>--%>
-<%--                            <li><a href="#"><i class="fa fa-retweet"></i></a></li>--%>
-<%--                            <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>--%>
-<%--                        </ul>--%>
-                    </div>
-                    <div class="featured__item__text">
-                        <h6><a href="#">BQ 8390</a></h6>
-                        <h5>$5.400.000</h5>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-4 col-sm-6 mix vegetables fresh-meat">
-                <div class="featured__item">
-                    <div class="featured__item__pic set-bg" data-setbg="img/bq8660.jpg">
-<%--                        <ul class="featured__item__pic__hover">--%>
-<%--                            <li><a href="#"><i class="fa fa-heart"></i></a></li>--%>
-<%--                            <li><a href="#"><i class="fa fa-retweet"></i></a></li>--%>
-<%--                            <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>--%>
-<%--                        </ul>--%>
-                    </div>
-                    <div class="featured__item__text">
-                        <h6><a href="#">BQ 8660</a></h6>
-                        <h5>$10.500.000</h5>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-4 col-sm-6 mix fastfood oranges">
-                <div class="featured__item">
-                    <div class="featured__item__pic set-bg" data-setbg="img/bq8786.jpg">
-<%--                        <ul class="featured__item__pic__hover">--%>
-<%--                            <li><a href="#"><i class="fa fa-heart"></i></a></li>--%>
-<%--                            <li><a href="#"><i class="fa fa-retweet"></i></a></li>--%>
-<%--                            <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>--%>
-<%--                        </ul>--%>
-                    </div>
-                    <div class="featured__item__text">
-                        <h6><a href="#">BQ 8786</a></h6>
-                        <h5>$8.800.000</h5>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-4 col-sm-6 mix fresh-meat vegetables">
-                <div class="featured__item">
-                    <div class="featured__item__pic set-bg" data-setbg="img/featured/feature-5.jpg">
-                        <ul class="featured__item__pic__hover">
-                            <li><a href="#"><i class="fa fa-heart"></i></a></li>
-                            <li><a href="#"><i class="fa fa-retweet"></i></a></li>
-                            <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
-                        </ul>
-                    </div>
-                    <div class="featured__item__text">
-                        <h6><a href="#">Crab Pool Security</a></h6>
-                        <h5>$30.00</h5>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-4 col-sm-6 mix oranges fastfood">
-                <div class="featured__item">
-                    <div class="featured__item__pic set-bg" data-setbg="img/featured/feature-6.jpg">
-                        <ul class="featured__item__pic__hover">
-                            <li><a href="#"><i class="fa fa-heart"></i></a></li>
-                            <li><a href="#"><i class="fa fa-retweet"></i></a></li>
-                            <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
-                        </ul>
-                    </div>
-                    <div class="featured__item__text">
-                        <h6><a href="#">Crab Pool Security</a></h6>
-                        <h5>$30.00</h5>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-4 col-sm-6 mix fresh-meat vegetables">
-                <div class="featured__item">
-                    <div class="featured__item__pic set-bg" data-setbg="img/featured/feature-7.jpg">
-                        <ul class="featured__item__pic__hover">
-                            <li><a href="#"><i class="fa fa-heart"></i></a></li>
-                            <li><a href="#"><i class="fa fa-retweet"></i></a></li>
-                            <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
-                        </ul>
-                    </div>
-                    <div class="featured__item__text">
-                        <h6><a href="#">Crab Pool Security</a></h6>
-                        <h5>$30.00</h5>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-4 col-sm-6 mix fastfood vegetables">
-                <div class="featured__item">
-                    <div class="featured__item__pic set-bg" data-setbg="img/featured/feature-8.jpg">
-                        <ul class="featured__item__pic__hover">
-                            <li><a href="#"><i class="fa fa-heart"></i></a></li>
-                            <li><a href="#"><i class="fa fa-retweet"></i></a></li>
-                            <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
-                        </ul>
-                    </div>
-                    <div class="featured__item__text">
-                        <h6><a href="#">Crab Pool Security</a></h6>
-                        <h5>$30.00</h5>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- Featured Section End -->
+<div style="height: 100px"></div>
 
 <!-- Banner Begin -->
 <div class="banner">
@@ -417,12 +206,12 @@
         <div class="row">
             <div class="col-lg-6 col-md-6 col-sm-6">
                 <div class="banner__pic">
-                    <img src="img/banner/banner-1.jpg" alt="">
+                    <img src="img/banner/banner1.jpg" alt="" height="400" width="600">
                 </div>
             </div>
             <div class="col-lg-6 col-md-6 col-sm-6">
                 <div class="banner__pic">
-                    <img src="img/banner/banner-2.jpg" alt="">
+                    <img src="img/banner/banner2.jpg" alt="" height="400" width="600">
                 </div>
             </div>
         </div>
@@ -635,64 +424,64 @@
 <!-- Latest Product Section End -->
 
 <!-- Blog Section Begin -->
-<section class="from-blog spad">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12">
-                <div class="section-title from-blog__title">
-                    <h2>From The Blog</h2>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-lg-4 col-md-4 col-sm-6">
-                <div class="blog__item">
-                    <div class="blog__item__pic">
-                        <img src="img/blog/blog-1.jpg" alt="">
-                    </div>
-                    <div class="blog__item__text">
-                        <ul>
-                            <li><i class="fa fa-calendar-o"></i> May 4,2019</li>
-                            <li><i class="fa fa-comment-o"></i> 5</li>
-                        </ul>
-                        <h5><a href="#">Cooking tips make cooking simple</a></h5>
-                        <p>Sed quia non numquam modi tempora indunt ut labore et dolore magnam aliquam quaerat </p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-4 col-sm-6">
-                <div class="blog__item">
-                    <div class="blog__item__pic">
-                        <img src="img/blog/blog-2.jpg" alt="">
-                    </div>
-                    <div class="blog__item__text">
-                        <ul>
-                            <li><i class="fa fa-calendar-o"></i> May 4,2019</li>
-                            <li><i class="fa fa-comment-o"></i> 5</li>
-                        </ul>
-                        <h5><a href="#">6 ways to prepare breakfast for 30</a></h5>
-                        <p>Sed quia non numquam modi tempora indunt ut labore et dolore magnam aliquam quaerat </p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-4 col-sm-6">
-                <div class="blog__item">
-                    <div class="blog__item__pic">
-                        <img src="img/blog/blog-3.jpg" alt="">
-                    </div>
-                    <div class="blog__item__text">
-                        <ul>
-                            <li><i class="fa fa-calendar-o"></i> May 4,2019</li>
-                            <li><i class="fa fa-comment-o"></i> 5</li>
-                        </ul>
-                        <h5><a href="#">Visit the clean farm in the US</a></h5>
-                        <p>Sed quia non numquam modi tempora indunt ut labore et dolore magnam aliquam quaerat </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+<%--<section class="from-blog spad">--%>
+<%--    <div class="container">--%>
+<%--        <div class="row">--%>
+<%--            <div class="col-lg-12">--%>
+<%--                <div class="section-title from-blog__title">--%>
+<%--                    <h2>From The Blog</h2>--%>
+<%--                </div>--%>
+<%--            </div>--%>
+<%--        </div>--%>
+<%--        <div class="row">--%>
+<%--            <div class="col-lg-4 col-md-4 col-sm-6">--%>
+<%--                <div class="blog__item">--%>
+<%--                    <div class="blog__item__pic">--%>
+<%--                        <img src="img/blog/blog-1.jpg" alt="">--%>
+<%--                    </div>--%>
+<%--                    <div class="blog__item__text">--%>
+<%--                        <ul>--%>
+<%--                            <li><i class="fa fa-calendar-o"></i> May 4,2019</li>--%>
+<%--                            <li><i class="fa fa-comment-o"></i> 5</li>--%>
+<%--                        </ul>--%>
+<%--                        <h5><a href="#">Cooking tips make cooking simple</a></h5>--%>
+<%--                        <p>Sed quia non numquam modi tempora indunt ut labore et dolore magnam aliquam quaerat </p>--%>
+<%--                    </div>--%>
+<%--                </div>--%>
+<%--            </div>--%>
+<%--            <div class="col-lg-4 col-md-4 col-sm-6">--%>
+<%--                <div class="blog__item">--%>
+<%--                    <div class="blog__item__pic">--%>
+<%--                        <img src="img/blog/blog-2.jpg" alt="">--%>
+<%--                    </div>--%>
+<%--                    <div class="blog__item__text">--%>
+<%--                        <ul>--%>
+<%--                            <li><i class="fa fa-calendar-o"></i> May 4,2019</li>--%>
+<%--                            <li><i class="fa fa-comment-o"></i> 5</li>--%>
+<%--                        </ul>--%>
+<%--                        <h5><a href="#">6 ways to prepare breakfast for 30</a></h5>--%>
+<%--                        <p>Sed quia non numquam modi tempora indunt ut labore et dolore magnam aliquam quaerat </p>--%>
+<%--                    </div>--%>
+<%--                </div>--%>
+<%--            </div>--%>
+<%--            <div class="col-lg-4 col-md-4 col-sm-6">--%>
+<%--                <div class="blog__item">--%>
+<%--                    <div class="blog__item__pic">--%>
+<%--                        <img src="img/blog/blog-3.jpg" alt="">--%>
+<%--                    </div>--%>
+<%--                    <div class="blog__item__text">--%>
+<%--                        <ul>--%>
+<%--                            <li><i class="fa fa-calendar-o"></i> May 4,2019</li>--%>
+<%--                            <li><i class="fa fa-comment-o"></i> 5</li>--%>
+<%--                        </ul>--%>
+<%--                        <h5><a href="#">Visit the clean farm in the US</a></h5>--%>
+<%--                        <p>Sed quia non numquam modi tempora indunt ut labore et dolore magnam aliquam quaerat </p>--%>
+<%--                    </div>--%>
+<%--                </div>--%>
+<%--            </div>--%>
+<%--        </div>--%>
+<%--    </div>--%>
+<%--</section>--%>
 <!-- Blog Section End -->
 
 <!-- Footer Section Begin -->
@@ -705,47 +494,10 @@
                         <%--                        <a href="./login.jsp"><img src="img/logo.png" alt=""></a>--%>
                     </div>
                     <ul>
-                        <li>Address: 60-49 Road 11378 New York</li>
-                        <li>Phone: +65 11.188.888</li>
+                        <li>Address: Ha Noi</li>
+                        <li>Phone: 0989.999.999</li>
                         <li>Email: hello@colorlib.com</li>
                     </ul>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 col-sm-6 offset-lg-1">
-                <div class="footer__widget">
-                    <h6>Useful Links</h6>
-                    <ul>
-                        <li><a href="#">About Us</a></li>
-                        <li><a href="#">About Our Shop</a></li>
-                        <li><a href="#">Secure Shopping</a></li>
-                        <li><a href="#">Delivery infomation</a></li>
-                        <li><a href="#">Privacy Policy</a></li>
-                        <li><a href="#">Our Sitemap</a></li>
-                    </ul>
-                    <ul>
-                        <li><a href="#">Who We Are</a></li>
-                        <li><a href="#">Our Services</a></li>
-                        <li><a href="#">Projects</a></li>
-                        <li><a href="#">Contact</a></li>
-                        <li><a href="#">Innovation</a></li>
-                        <li><a href="#">Testimonials</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-12">
-                <div class="footer__widget">
-                    <h6>Join Our Newsletter Now</h6>
-                    <p>Get E-mail updates about our latest shop and special offers.</p>
-                    <form action="#">
-                        <input type="text" placeholder="Enter your mail">
-                        <button type="submit" class="site-btn">Subscribe</button>
-                    </form>
-                    <div class="footer__widget__social">
-                        <a href="#"><i class="fa fa-facebook"></i></a>
-                        <a href="#"><i class="fa fa-instagram"></i></a>
-                        <a href="#"><i class="fa fa-twitter"></i></a>
-                        <a href="#"><i class="fa fa-pinterest"></i></a>
-                    </div>
                 </div>
             </div>
         </div>
@@ -753,12 +505,7 @@
             <div class="col-lg-12">
                 <div class="footer__copyright">
                     <div class="footer__copyright__text">
-                        <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                            Copyright &copy;<script>document.write(new Date().getFullYear());</script>
-                            All rights reserved | This template is made with <i class="fa fa-heart"
-                                                                                aria-hidden="true"></i> by <a
-                                    href="https://colorlib.com" target="_blank">Colorlib</a>
-                            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+                        <p>Copyright &copy; 2022 All rights reserved | This template is made by Group 5 - C1121G1 - CodeGym</p>
                     </div>
                     <div class="footer__copyright__payment"><img src="img/payment-item.png" alt=""></div>
                 </div>

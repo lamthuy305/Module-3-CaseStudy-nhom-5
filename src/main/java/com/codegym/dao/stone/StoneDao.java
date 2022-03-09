@@ -133,4 +133,28 @@ public class StoneDao implements IStoneDao {
         }
         return stones;
     }
+
+    @Override
+    public List<Stone> findAllByName(String q) {
+        List<Stone> stones = new ArrayList<>();
+        try {
+            PreparedStatement preparedStatement = connection.prepareStatement("SELECT * FROM stones WHERE name like ?");
+            preparedStatement.setString(1,q);
+            ResultSet resultSet = preparedStatement.executeQuery();
+            while (resultSet.next()) {
+                int id = resultSet.getInt("id");
+                String name = resultSet.getString("name");
+                double price = resultSet.getDouble("price");
+                String description = resultSet.getString("description");
+                String image = resultSet.getString("image");
+                int category_id = resultSet.getInt("category_id");
+                Stone stone = new Stone(id, name, price, description, image, category_id);
+                stones.add(stone);
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+
+        return stones;
+    }
 }
