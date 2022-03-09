@@ -23,7 +23,6 @@
 </head>
 
 <body>
-<%--SỬA TỪ ĐÂY--%>
 
 <!-- Header Section Begin -->
 <header class="header">
@@ -45,10 +44,6 @@
                         <div class="header__top__right__language">
                             <img src="img/vietnam.png" alt="" height="15" width="20">
                             <div>Viet Nam</div>
-                            <span class="arrow_carrot-down"></span>
-                            <ul>
-                                <li><a href="#">English</a></li>
-                            </ul>
                         </div>
                         <div class="header__top__right__auth">
                             <a href="#"><i class="fa fa-user"></i>Login</a>
@@ -68,29 +63,12 @@
             <div class="col-lg-6">
                 <nav class="header__menu">
                     <ul>
-                        <li class="active"><a href="">Home</a></li>
+                        <li class="active"><a href="/home">Home</a></li>
                         <li><a href="./shop-grid.html">Shop</a></li>
                         <li><a href="#">Pages</a>
-                            <%--                            <ul class="header__menu__dropdown">--%>
-                            <%--                                <li><a href="./shop-details.html">Shop Details</a></li>--%>
-                            <%--                                <li><a href="./shoping-cart.html">Shoping Cart</a></li>--%>
-                            <%--                                <li><a href="./checkout.html">Check Out</a></li>--%>
-                            <%--                                <li><a href="./blog-details.html">Blog Details</a></li>--%>
-                            <%--                            </ul>--%>
                         </li>
-                        <li><a href="./blog.html">Blog</a></li>
-                        <li><a href="./contact.html">Contact</a></li>
                     </ul>
                 </nav>
-            </div>
-            <div class="col-lg-3">
-                <div class="header__cart">
-                    <ul>
-                        <li><a href="#"><i class="fa fa-heart"></i> <span>1</span></a></li>
-                        <li><a href="#"><i class="fa fa-shopping-bag"></i> <span>3</span></a></li>
-                    </ul>
-                    <div class="header__cart__price">item: <span>$150.00</span></div>
-                </div>
             </div>
         </div>
         <div class="humberger__open">
@@ -112,7 +90,7 @@
                     </div>
                     <ul>
                         <c:forEach var="category" items="${categories}">
-                            <li><a href="/?action=viewcategory&id=${category.id}">${category.name}</a></li>
+                            <li><a href="/home?action=viewcategory&id=${category.id}">${category.name}</a></li>
                         </c:forEach>
 
                     </ul>
@@ -121,7 +99,7 @@
             <div class="col-lg-9">
                 <div class="hero__search">
                     <div class="hero__search__form">
-                        <form action="?action=seachstone" method="get">
+                        <form action="/home?action=seachstone" method="get">
                             <div class="hero__search__categories">
                                 All Product
                                 <span class="arrow_carrot-down"></span>
@@ -142,7 +120,7 @@
                     </div>
                 </div>
                 <div class="hero__item set-bg" data-setbg="img/banner/sale.jpg" style="height: 700px;width: 850px">
-                    <h1><b>8-3 <br/>SALE <br/>10% All Product</b></h1>
+                    <h1 style="color: #3CC032"><b>8-3 <br/>SALE 10%<br/>All Product</b></h1>
                 </div>
             </div>
         </div>
@@ -236,7 +214,7 @@
             <div class="col-lg-12">
                 <div class="footer__copyright">
                     <div class="footer__copyright__text">
-                        <p>Copyright &copy; 2022 All rights reserved | This template is made by Group 5 - C1121G1 -
+                        <p>Copyright &copy; 2022 All rights reserved | by Group 5 - C1121G1 -
                             CodeGym</p>
                     </div>
                     <div class="footer__copyright__payment"><img src="img/payment-item.png" alt=""></div>

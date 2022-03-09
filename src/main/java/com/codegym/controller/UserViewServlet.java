@@ -22,7 +22,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
-@WebServlet(name = "UserViewServlet", value = "")
+@WebServlet(name = "UserViewServlet", value = "/home")
 public class UserViewServlet extends HttpServlet {
 
     private ICategoryService categoryService;

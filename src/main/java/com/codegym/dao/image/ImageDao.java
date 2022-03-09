@@ -1,9 +1,7 @@
 package com.codegym.dao.image;
 
 import com.codegym.dao.DBConnection;
-import com.codegym.model.Category;
 import com.codegym.model.Image;
-import com.codegym.model.Stone;
 
 import java.sql.*;
 import java.util.ArrayList;
@@ -11,11 +9,6 @@ import java.util.List;
 
 public class ImageDao implements IImageDao {
     public static final String SQL_SELECT_ALL_IMAGE = "SELECT * FROM image;";
-    public static final String SQL_SELECT_STONE_BY_ID = "SELECT * FROM stones WHERE id = ?;";
-    public static final String SQL_SELECT_ALL_STONE_BY_CATEGORY = "SELECT * FROM stones WHERE category_id =?;";
-    public static final String SQL_INSERT_STONE = "INSERT INTO stones (name,price,description,image,category_id) VALUES (?,?,?,?,?)";
-    public static final String SQL_DELETE_STONE = "DELETE FROM stones WHERE id=?;";
-    public static final String SQL_UPDATE_STONE = "UPDATE stones SET name=?, price=?, description=?,image=?,category_id=? WHERE id =?;";
     private Connection connection = DBConnection.getConnection();
 
     public ImageDao() {
