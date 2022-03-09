@@ -1,2 +1,4 @@
-package com.codegym.dao.role;public class RoleDao {
+package com.codegym.dao.role;
+
+public class RoleDao {
 }
