@@ -23,31 +23,31 @@
     <a href="/stones" class="btn btn-primary">Stone List</a>
     <div style="text-align: center">
         <img src="${stone.image}" alt="" width="400" height="400">
-
     </div>
-    <table class="table">
-        <thead>
-        <tr>
-            <th scope="col">ID</th>
-            <th scope="col">Name</th>
-            <th scope="col">Price</th>
-            <th scope="col">Description</th>
-            <th scope="col">Category</th>
-            <th scope="col"></th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr>
-            <td>${stone.id}</td>
-            <td>${stone.name}</td>
-            <td>${stone.price}</td>
-            <td>${stone.description}</td>
-            <td>${stone.category_id}</td>
-            <td><button type="submit" class="btn btn-danger">Xóa</button></td>
-        </tr>
-        </tbody>
-    </table>
-
+    <form action="/stones?action=delete&id=${stone.id}" method="post">
+        <table class="table">
+            <thead>
+            <tr>
+                <th scope="col">ID</th>
+                <th scope="col">Name</th>
+                <th scope="col">Price</th>
+                <th scope="col">Description</th>
+                <th scope="col">Category</th>
+                <th scope="col"></th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>${stone.id}</td>
+                <td>${stone.name}</td>
+                <td>${stone.price}</td>
+                <td>${stone.description}</td>
+                <td>${stone.category_id}</td>
+                <td><button type="submit" class="btn btn-danger">Xóa</button></td>
+            </tr>
+            </tbody>
+        </table>
+    </form>
 </div>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"

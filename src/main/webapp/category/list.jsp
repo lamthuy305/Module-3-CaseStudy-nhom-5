@@ -35,8 +35,8 @@
             <tr>
                 <td>${category.id}</td>
                 <td><a href="/category?action=view&id=${category.id}">${category.name}</a></td>
-                <td><a href="/stones?action=edit&id=${category.id}" class="btn btn-primary"><i class="fas fa-edit"></i></a></td>
-                <td><a href="/stones?action=delete&id=${category.id}" class="btn btn-danger"><i class="fas fa-trash"></i></a></td>
+                <td><a href="/category?action=edit&id=${category.id}" class="btn btn-primary"><i class="fas fa-edit"></i></a></td>
+                <td><a href="/category?action=delete&id=${category.id}" class="btn btn-danger"><i class="fas fa-trash"></i></a></td>
             </tr>
         </c:forEach>
         </tbody>

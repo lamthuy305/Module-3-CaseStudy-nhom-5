@@ -17,14 +17,22 @@
 </head>
 <body>
 <div class="container">
-    <a href="/category" class="btn btn-primary">Category List</a>
-    <h1>Edit Category</h1>
-    <form action="/category?action=edit&id=${category.id}" method="post">
+    <a href="/image" class="btn btn-primary">Image List</a>
+    <h1>Thêm Image</h1>
+    <form action="/image?action=create" method="post">
         <div class="mb-3">
-            <label for="name" class="form-label">Name</label>
-            <input type="text" class="form-control" id="name" name="name" value="${category.name}">
+            <label for="link" class="form-label">Link</label>
+            <input type="text" class="form-control" id="link" name="link">
         </div>
-        <button type="submit" class="btn btn-primary">Hoàn thành</button>
+        <div class="mb-3">
+            <label for="stone_id" class="form-label">Stone ID</label>
+            <select class="form-control" name="stone_id" id="stone_id">
+                <c:forEach var="stone" items="${stones}">
+                    <option value="${stone.id}">${stone.name}</option>
+                </c:forEach>
+            </select>
+        </div>
+        <button type="submit" class="btn btn-primary">Thêm mới</button>
     </form>
 </div>
 

@@ -29,11 +29,11 @@ public class CategoryService implements ICategoryService {
 
     @Override
     public boolean updateById(int id, Category category) {
-        return false;
+        return categoryDao.updateById(id, category);
     }
 
     @Override
     public boolean deleteById(int id) {
-        return false;
+        return categoryDao.deleteCategoryUsingProcedure(id);
     }
 }

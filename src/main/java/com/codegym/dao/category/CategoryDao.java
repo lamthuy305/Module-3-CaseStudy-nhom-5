@@ -4,10 +4,7 @@ import com.codegym.dao.DBConnection;
 import com.codegym.model.Category;
 import com.codegym.model.Stone;
 
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.SQLException;
+import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -15,6 +12,7 @@ public class CategoryDao implements ICategoryDao {
 
     public static final String SQL_SELECT_ALL_CATEGORY = "SELECT * FROM category;";
     public static final String SQL_SELECT_CATEGORY_BY_ID = "SELECT * FROM category Where id = ?;";
+    public static final String SQL_DELETE_CATEGORY = "call delete_category(?);";
     private Connection connection = DBConnection.getConnection();
 
 
@@ -70,11 +68,31 @@ public class CategoryDao implements ICategoryDao {
 
     @Override
     public boolean updateById(int id, Category category) {
+        try {
+            PreparedStatement preparedStatement = connection.prepareStatement("UPDATE category SET name=? WHERE id =?;");
+            preparedStatement.setString(1, category.getName());
+            preparedStatement.setInt(2, id);
+            return preparedStatement.executeUpdate() > 0;
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
         return false;
     }
 
     @Override
     public boolean deleteById(int id) {
+        return false;
+    }
+
+    @Override
+    public boolean deleteCategoryUsingProcedure(int id) {
+        try {
+            CallableStatement callableStatement = connection.prepareCall(SQL_DELETE_CATEGORY);
+            callableStatement.setInt(1, id);
+            return callableStatement.executeUpdate() > 0;
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
         return false;
     }
 }

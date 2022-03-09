@@ -30,12 +30,12 @@ public class StoneService implements IStoneService {
 
     @Override
     public boolean updateById(int id, Stone stone) {
-        return false;
+        return stoneDao.updateById(id, stone);
     }
 
     @Override
     public boolean deleteById(int id) {
-        return false;
+        return stoneDao.deleteById(id);
     }
 
     @Override

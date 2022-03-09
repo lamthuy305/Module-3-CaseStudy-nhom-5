@@ -17,22 +17,25 @@
 </head>
 <body>
 <div class="container">
-    <h1 style="text-align: center " >Category List</h1>
-    <a href="/category" class="btn btn-primary"><b>Category List</b></a>
+    <h1 style="text-align: center " >Image</h1>
+    <a href="/image" class="btn btn-primary">Image List</a>
 
-    <form action="/category?action=delete&id=${category.id}" method="post">
+
+    <form action="/image?action=delete&id=${image.id}" method="post">
         <table class="table">
             <thead>
             <tr>
-                <th scope="col">ID</th>
-                <th scope="col">Name</th>
-                <th></th>
+                <th scope="col" style="width: 20%">Image ID</th>
+                <th scope="col" style="width: 20%">Stone ID</th>
+                <th scope="col" style="width: 40%">Image</th>
+                <th style="width: 19%"></th>
             </tr>
             </thead>
             <tbody>
             <tr>
-                <td>${category.id}</td>
-                <td>${category.name}</td>
+                <td>${image.id}</td>
+                <td>${image.stone_id}</td>
+                <td><img src="${image.link}" alt="" width="500px" height="500px"></td>
                 <td><td><button type="submit" class="btn btn-danger">Xóa</button></td></td>
             </tr>
             </tbody>
