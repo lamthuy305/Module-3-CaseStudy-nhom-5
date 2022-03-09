@@ -9,8 +9,8 @@ import java.util.List;
 public class UsersDao implements IUserDao {
     public static final String SELECT_ALL_FROM_USER = "select * from users";
     public static final String SELECT_ONE_FROM_USER = "SELECT * FROM users where id = ?";
-    public static final String INSERT_USER = "insert into users (name,password,birthday,address,email) values (?,?,?,?,?)";
-    public static final String UPDATE_USER = "UPDATE users SET name = ?, password = ?, birthday = ?, address = ?, email=? where  id = ?";
+    public static final String INSERT_USER = "insert into users (name,password,birthday,address,email,role_id) values (?,?,?,?,?,?)";
+    public static final String UPDATE_USER = "UPDATE users SET name = ?, password = ?, birthday = ?, address = ?, email=?,role_id =? where  id = ?";
     public static final String DELETE_USER = "delete from users where id = ?";
     Connection connection = DBConnection.getConnection();
 
@@ -27,7 +27,8 @@ public class UsersDao implements IUserDao {
                 Date birthday = rs.getDate("birthday");
                 String address = rs.getString("address");
                 String email = rs.getString("email");
-                User user = new User(id, username, password,birthday,address,email);
+                int role_id = rs.getInt("role_id");
+                User user = new User(id, username, password,birthday,address,email,role_id);
                 users.add(user);
             }
         } catch (SQLException e) {
@@ -50,7 +51,8 @@ public class UsersDao implements IUserDao {
                 Date birthday = resultSet.getDate("birthday");
                 String address = resultSet.getString("address");
                 String email = resultSet.getString("email");
-                user = new User(id,username, password,birthday,address,email);
+                int role_id =resultSet.getInt("role_id");
+                user = new User(id,username, password,birthday,address,email,role_id);
             }
         } catch (SQLException e) {
             e.printStackTrace();
@@ -67,6 +69,7 @@ public class UsersDao implements IUserDao {
             preparedStatement.setDate(3, user.getBirthday());
             preparedStatement.setString(4, user.getAddress());
             preparedStatement.setString(5, user.getEmail());
+            preparedStatement.setInt(6,user.getRole_id());
             return preparedStatement.executeUpdate() > 0;
         } catch (SQLException e) {
             e.printStackTrace();
@@ -83,7 +86,8 @@ public class UsersDao implements IUserDao {
             preparedStatement.setDate(3, user.getBirthday());
             preparedStatement.setString(4, user.getAddress());
             preparedStatement.setString(5, user.getEmail());
-            preparedStatement.setInt(6,id);
+            preparedStatement.setInt(6,user.getRole_id());
+            preparedStatement.setInt(7,id);
             return preparedStatement.executeUpdate() > 0;
         } catch (SQLException e) {
             e.printStackTrace();

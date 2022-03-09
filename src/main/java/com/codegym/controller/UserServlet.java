@@ -121,7 +121,8 @@ public class UserServlet extends HttpServlet {
         Date birthday = Date.valueOf(request.getParameter("birthday"));
         String address = request.getParameter("address");
         String email = request.getParameter("email");
-        User user = new User(id,name, password, birthday, address, email);
+        int role_id = Integer.parseInt(request.getParameter("role_id"));
+        User user = new User(id,name, password, birthday, address, email,role_id);
         userService.updateById(id, user);
         response.sendRedirect("/users");
     }
@@ -132,7 +133,8 @@ public class UserServlet extends HttpServlet {
         Date birthday = Date.valueOf(request.getParameter("birthday"));
         String address = request.getParameter("address");
         String email = request.getParameter("email");
-        User user = new User(name, password, birthday, address, email);
+        int role_id = Integer.parseInt(request.getParameter("role_id"));
+        User user = new User(name, password, birthday, address, email, role_id);
         userService.create(user);
         response.sendRedirect("/users");
     }
