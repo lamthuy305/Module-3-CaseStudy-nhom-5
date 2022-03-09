@@ -203,7 +203,7 @@
                     <!-- Add icons to the links using the .nav-icon class
                          with font-awesome or any other icon font library -->
                     <li class="nav-item">
-                        <a href="/products" class="nav-link">
+                        <a href="/stones" class="nav-link">
                             <i class="nav-icon fas fa-th"></i>
                             <p>
                                 Quản lý sản phẩm
@@ -249,6 +249,7 @@
         </div>
         <!-- /.sidebar -->
     </aside>
+
 
     <!-- Content Wrapper. Contains page content -->
 </div>
