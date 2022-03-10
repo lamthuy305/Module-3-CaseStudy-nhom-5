@@ -24,6 +24,7 @@ public class User {
         this.role_id = role_id;
     }
 
+
     public User(String username, String password, Date birthday, String address, String email, int role_id) {
         this.username = username;
         this.password = password;
@@ -31,6 +32,15 @@ public class User {
         this.address = address;
         this.email = email;
         this.role_id = role_id;
+    }
+
+    public User(int id, String username, String password, Date birthday, String address, String email) {
+        this.id = id;
+        this.username = username;
+        this.password = password;
+        this.birthday = birthday;
+        this.address = address;
+        this.email = email;
     }
 
     public int getId() {

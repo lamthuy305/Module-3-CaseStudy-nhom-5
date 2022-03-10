@@ -34,6 +34,10 @@
             <label for="userEmail" class="form-label">Email:</label>
             <input type="text" class="form-control" id="userEmail" name="email">
         </div>
+        <div class="mb-3">
+            <label for="role_id" class="form-label">ROLE_ID:</label>
+            <input type="text" class="form-control" id="role_id" name="role_id">
+        </div>
         <button type="submit" class="btn btn-primary">Tạo mới</button>
     </form>
 </div>

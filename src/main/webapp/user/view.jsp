@@ -33,6 +33,10 @@
             <label for="email" class="form-label">Email:</label>
             <input type="text" class="form-control" id="email" name="email" value="${user.email}" disabled>
         </div>
+        <div class="mb-3">
+            <label for="email" class="form-label">ROLE_ID:</label>
+            <input type="text" class="form-control" id="roleId" name="role_id" value="${user.role_id}" disabled>
+        </div>
         <a href="/users" class="btn btn-secondary">Quay lại trang danh sách người dùng</a>
     </form>
 </div>

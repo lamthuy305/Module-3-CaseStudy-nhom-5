@@ -1,6 +1,6 @@
 package com.codegym.service;
 
-import com.codegym.dao.IUserDao;
+import com.codegym.dao.userdao.IUserDao;
 import com.codegym.model.User;
 
 import java.util.List;
@@ -36,4 +36,11 @@ public class UserService implements IUserService{
     public boolean deleteById(int id) {
         return userDao.deleteById(id);
     }
+
+    @Override
+    public List<User> getAllGuestUser() {
+        return userDao.getAllGuestUser();
+    }
+
+
 }

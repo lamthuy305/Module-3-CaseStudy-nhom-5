@@ -18,6 +18,7 @@
             <th scope="col">Ngày tháng năm sinh</th>
             <th scope="col">Địa chỉ</th>
             <th scope="col">Email</th>
+            <th scope="col">ROLE_ID</th>
             <th colspan="2"></th>
         </tr>
         </thead>
@@ -29,6 +30,7 @@
                 <td>${user.birthday}</td>
                 <td>${user.address}</td>
                 <td>${user.email}</td>
+                <td>${user.role_id}</td>
                 <td>
                     <a class="btn btn-info" href="/users?action=update&id=${user.id}">
                         <i class="fas fa-edit"></i>

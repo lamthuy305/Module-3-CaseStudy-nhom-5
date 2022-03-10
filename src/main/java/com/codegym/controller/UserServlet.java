@@ -1,6 +1,6 @@
 package com.codegym.controller;
 
-import com.codegym.dao.UsersDao;
+import com.codegym.dao.userdao.UsersDao;
 import com.codegym.model.User;
 import com.codegym.service.IUserService;
 import com.codegym.service.UserService;
@@ -104,6 +104,9 @@ public class UserServlet extends HttpServlet {
             case "delete": {
                 deleteUser(request, response);
                 break;
+            }
+            case "showGuest":{
+
             }
         }
     }

@@ -29,6 +29,10 @@
             <label for="userEmail" class="form-label">Email:</label>
             <input type="text" class="form-control" id="userEmail" name="email" value="${user.email}" disabled>
         </div>
+        <div class="mb-3">
+            <label for="userEmail" class="form-label">Email:</label>
+            <input type="text" class="form-control" id="roleID" name="role_id" value="${user.email}" disabled>
+        </div>
         <button type="submit" class="btn btn-danger">Xóa</button>
     </form>
 </div>
