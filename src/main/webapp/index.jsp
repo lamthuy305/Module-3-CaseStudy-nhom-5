@@ -64,7 +64,7 @@
                 <nav class="header__menu">
                     <ul>
                         <li class="active"><a href="/home">Home</a></li>
-                        <li><a href="./shop-grid.html">Shop</a></li>
+                        <li><a href="/orders?action=create">Shop</a></li>
                         <li><a href="#">Pages</a>
                         </li>
                     </ul>
@@ -142,7 +142,11 @@
                     </div>
                 </div>
                 <div class="col-lg-3">
-                    <div class="categories__item set-bg" data-setbg="img/categories/sp3.jpg">
+                    <div class="categories__item set-bg" data-setbg="img/product/product_bq8730_1.jpg">
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="categories__item set-bg" data-setbg="img/product/product_bq8786_1.jpg">
                     </div>
                 </div>
                 <div class="col-lg-3">
@@ -151,6 +155,10 @@
                 </div>
                 <div class="col-lg-3">
                     <div class="categories__item set-bg" data-setbg="img/categories/sp5.jpg">
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="categories__item set-bg" data-setbg="img/product/product_bq8660_2.jpg">
                     </div>
                 </div>
                 <div class="col-lg-3">
